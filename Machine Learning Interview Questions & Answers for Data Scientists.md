@@ -59,24 +59,26 @@ Investigating the outliers is always the first step in understanding how to trea
   
 ### Q3: What are the differences and similarities between gradient boosting and random forest? and what are the advantages and disadvantages of each when compared to each other? ###
 
-Similarities:
-1. Both these algorithms are decision-tree-based algorithms
-2. Both these algorithms are ensemble algorithms
-3. Both are flexible models and do not need much data preprocessing.
-
-The rest of the answer is [here](https://365datascience.com/career-advice/job-interview-tips/machine-learning-interview-questions-and-answers/#2:~:text=3.%20What%20are%20the%20differences%20and%20similarities%20between%20gradient%20boosting%20and%20random%20forest%3F%20And%20what%20are%20the%20advantages%20and%20disadvantages%20of%20each%20when%20compared%20to%20each%C2%A0other%3F)
+- Random Forest uses Bagging and gradient boosting uses Boosting.
+- Trees run parallely for Rf and sequqntitally for GB. This can make run RF faster.
+- GB is more prone to overfit than RF. Lets say their is noise in data. 
 
 ### Q4: What are L1 and L2 regularization? What are the differences between the two? ###
 
 Answer:
 
-Regularization is a technique used to avoid overfitting by trying to make the model more simple.The rest of the answer is [here](https://365datascience.com/career-advice/job-interview-tips/machine-learning-interview-questions-and-answers/#2:~:text=6.%20What%20are%20L1%20and%20L2%20regularizations%3F%20What%20are%20the%20differences%20between%20the%C2%A0two%3F)
+Regularization is a technique used to avoid overfitting by trying to make the model more simple.
+- L1 regularization adds sum of absolute weights to the cost function. This results in removal of small value parameters. This makes the model simpler and also helps with feature selection.
+- L2 regularization adds sum of suqtred weights, this ensures no weights are removed, they are just minimized. Also ensures no single parameter gets too large, making sure the model doesn't overfit on a single feature.
+
 ### Q5: What are the Bias and Variance in a Machine Learning Model and explain the bias-variance trade-off? ###
 
 Answer:
 
-The goal of any supervised machine learning model is to estimate the mapping function (f) that predicts the target variable (y) given input (x). The prediction error can be broken down into three parts:
-The rest of the answer is [here](https://365datascience.com/career-advice/job-interview-tips/machine-learning-interview-questions-and-answers/#2:~:text=8.%20What%20are%20the%20bias%20and%20variance%20in%20a%20machine%20learning%20model%20and%20explain%20the%20bias%2Dvariance%20trade%2Doff%3F)
+High Bias - Underfit
+High Variance - Overfit
+
+Bias and varaicnce behaves as a tradeoff. Increaseing model complexity can reduce bias which can result in increasing of variance
 
 ### Q6: Mention three ways to handle missing or corrupted data in a dataset. ###
 
