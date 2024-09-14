@@ -34,18 +34,31 @@ Answer:
 set(X).intersect (set(Y))
 ```
 Set:
+
 define set like this: temp = set((x, y , 2, 4))
+
 temp.update((5))
+
 temp.remove((5))
+
 temp.discard((5)) -- doesnt raise an error if elem not present in set
+
 temp.clear() -- removes everything
+
 first_set.union(second_set)
+
 first_set.intersection(second_set)
+
 first_set - second_set
+
 first_set.symmetric_difference(second_set)
+
 a.issubset(b)
+
 a.issuperset(b)
+
 a.isdisjoint(b)
+
 frozenset: immutable set, so now canbe used as a key to a dictionary
 
 ### Q2: Given an array, find all the duplicates in this array? For example: input: [1,2,3,1,3,6,5] output: [1,3] ###
