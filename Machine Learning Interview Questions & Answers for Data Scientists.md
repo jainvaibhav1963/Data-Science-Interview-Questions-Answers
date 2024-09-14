@@ -84,7 +84,8 @@ Bias and varaicnce behaves as a tradeoff. Increaseing model complexity can reduc
 
 Answer:
 
-In general, real-world data often has a lot of missing values. The cause of missing values can be data corruption or failure to record data. The rest of the answer is [here](https://365datascience.com/career-advice/job-interview-tips/machine-learning-interview-questions-and-answers/#9:~:text=10.-,Mention%20three%20ways%20to%20handle%20missing%20or%20corrupted%20data%20in%20a%C2%A0dataset.,-In%20general%2C%20real)
+Delete rows with missing values: Note that this can lead to information loss
+Missing value imputation - mean, medain, mode, moving window and ML bases estimations. Combine with buisness context.
 
 ### Q7: Explain briefly the logistic regression model and state an example of when you have used it recently. ###
 
@@ -92,11 +93,12 @@ Answer:
 
 Logistic regression is used to calculate the probability of occurrence of an event in the form of a dependent output variable based on independent input variables. Logistic regression is commonly used to estimate the probability that an instance belongs to a particular class. If the probability is bigger than 0.5 then it will belong to that class (positive) and if it is below 0.5 it will belong to the other class. This will make it a binary classifier.
 
+Instead of fitting on a linear line, we fit target on sigmoid curve.
+
 It is important to remember that the Logistic regression isn't a classification model, it's an ordinary type of regression algorithm, and it was developed and used before machine learning, but it can be used in classification when we put a threshold to determine specific categories"
 
-There is a lot of classification applications to it:
+Drawbacks: Multicollinearity, outliers, linear relationship.
 
-Classify email as spam or not, To identify whether the patient is healthy or not, and so on.
 
 ### Q8: Explain briefly batch gradient descent, stochastic gradient descent, and mini-batch gradient descent. and what are the pros and cons for each of them? ###
 
