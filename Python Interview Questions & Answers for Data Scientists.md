@@ -33,6 +33,14 @@ Answer:
 ```
 set(X).intersect (set(Y))
 ```
+Set:
+Immutable
+define set like this: temp = set((x, y , 2, 4))
+temp.update((5))
+temp.remove((5))
+temp.discard((5)) -- doesnt raise an error if elem not present in set
+temp.clear() -- removes everything
+first
 
 ### Q2: Given an array, find all the duplicates in this array? For example: input: [1,2,3,1,3,6,5] output: [1,3] ###
 
