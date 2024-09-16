@@ -247,6 +247,7 @@ if k is an interger then (a+b) is a power of 3.
 Drawbacks: Import math might not always be avaialble
 
 2. Keep dividing by 3, if eventually you get 1 then good. If dividing by 3 leads to a remainder other than 0 then its not a power of 3
+```
 def is_pow3(x):
     while x > 1:
         if x % 3 != 0:
@@ -254,7 +255,8 @@ def is_pow3(x):
         x //= 3
     return x == 1
 then loop through n,n+1 to check sums of pairs O(n^2)
-
+```
+```
 def solve(n, w):
     cnt = 0
 
