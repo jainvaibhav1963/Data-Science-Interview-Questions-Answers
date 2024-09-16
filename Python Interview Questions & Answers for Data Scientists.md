@@ -254,8 +254,18 @@ def is_pow3(x):
         x //= 3
     return x == 1
 then loop through n,n+1 to check sums of pairs O(n^2)
+
+def solve(n, w):
+    cnt = 0
+
+    for i in range(n):
+        for j in range(i + 1, n):
+            if is_pow3(w[i] + w[j]):
+                cnt += 1
+
+    return cnt
    
-3. Compute all powers of 3 in a single operation as we know 3^20 is max - this makes it a constant operation o(1)
+4. Compute all powers of 3 in a single operation as we know 3^20 is max - this makes it a constant operation o(1)
 ```
 def solve(n, w):
     pow3 = [3**i for i in range(21)]  # Precompute powers of 3 up to 3^20
